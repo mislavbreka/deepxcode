@@ -1,0 +1,107 @@
+{{ define "navigation" }}
+    <div class="navigationcontainer navbar-fixed" id="nav">
+        <div class="navigation">
+            <div class="left">
+                <div id="menu" class="menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="center">
+
+                <div class="logo unselectable" id="atom-logo">
+                    <div class="atom">
+                        <button disabled="true">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                    </div>
+                    <a>physics</a>
+                </div>
+
+            </div>
+            <div class="right">
+                <div id="search" class="menu">
+                    <div class="circle0"></div>
+                    <div class="bar4"></div>
+                </div>
+            </div>
+        </div>
+
+        <form class="navigationsearch hide" id="navsearch">
+            <input type="text" class="search" id="searchinput" placeholder="Find a Equation.." autocomplete="off">
+            <div class="menu">
+                <div class="circle0"></div>
+                <div class="bar4"></div>
+            </div>
+        </form>
+
+        <div class="results hide" id="navresults">
+
+            <li style="display: none;">
+                <a href="/add/"><a>[]</a></a>
+            </li>
+
+        </div>
+
+        <div class="navigationcontent hide" id="navcontent">
+            <div id="login-icon">
+                <img src="/data/icons/loginuser.png" alt="" class="icon">
+                <a>Log In</a>
+            </div>
+            <div id="register-icon">
+                <img src="/data/icons/registeruser.png" alt="" class="icon">
+                <a>Register</a>
+            </div>
+            <div id="profile-icon">
+                <img src="/data/icons/userprofile.png" alt="" class="icon">
+                <a>Profile</a>
+            </div>
+            <div id="data-icon">
+                <img src="/data/icons/data.png" alt="" class="icon">
+                <a>Display data</a>
+            </div>
+        </div>
+    </div>
+{{ end }}
+
+{{ define "footer" }}
+    <div class="footer">
+        <div class="info">
+            <div>
+                <h1>deepxcode</h1>
+                <a>Do your homework.</a>
+                <a>www.deepxcode.com</a>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <a href="/login/"> Log In </a>
+                <a href="/register/"> Register </a>
+                <a href="/profile/"> Profile </a>
+                <a href="/data/"> Data </a>
+            </div>
+            <div>
+                <h3>About</h3>
+                <a> It's my high school finals project.</a>
+                <a> Server is written in GO programming language. </a>
+                <a> Client side is usual HTML, CSS, JavaScript combo. </a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <a> Mislav Breka </a>
+                <a> mislawbreka@gmail.com </a>
+            </div>
+            
+            
+        </div>
+        <div class="footbar"></div>
+        <div class="social">
+            <div id="github-icon">
+                <img src="/data/icons/github.png" class="icon-gh">
+                <a> View source code on github </a>
+            </div>
+        </div>
+    </div>
+{{ end }}
